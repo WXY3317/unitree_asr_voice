@@ -2,14 +2,7 @@
 build/
 devel/
 install/
-src/unitree_asr_voice/config/
-src/unitree_asr_voice/launch/
-src/unitree_asr_voice/msgs/
-src/unitree_asr_voice/src/
-src/unitree_asr_voice/include/
-src/unitree_asr_voice/CMakeLists.txt
-src/unitree_asr_voice/package.xml
-src/CMakeLists.txt
+
 
 
 # VS Code C/C++ (cpptools) browse database & cache (keep .vscode/*.json tracked)

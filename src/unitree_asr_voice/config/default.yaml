@@ -1,0 +1,4 @@
+network_interface: eth0
+dds_topic: rt/audio_msg
+asr_topic: /unitree/asr
+queue_size: 10

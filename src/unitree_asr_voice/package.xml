@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>unitree_asr_voice</name>
+  <version>0.0.1</version>
+  <description>ROS1 node: subscribe Unitree G1 DDS ASR (rt/audio_msg) and republish as std_msgs/String.</description>
+  <maintainer email="you@example.com">wxy</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+</package>

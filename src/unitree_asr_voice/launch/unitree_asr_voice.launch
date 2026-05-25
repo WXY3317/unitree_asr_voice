@@ -1,0 +1,16 @@
+<launch>
+  <arg name="config_file" default="$(find unitree_asr_voice)/config/default.yaml"/>
+  <rosparam file="$(arg config_file)" command="load" ns="unitree_asr_voice"/>
+
+  <arg name="network_interface" default="eth0" doc="Network interface connected to the robot (e.g. eth0)"/>
+  <arg name="dds_topic" default="rt/audio_msg" doc="Unitree DDS topic for ASR text"/>
+  <arg name="asr_topic" default="/unitree/asr" doc="ROS topic publishing std_msgs/String ASR results"/>
+  <arg name="queue_size" default="10"/>
+
+  <node pkg="unitree_asr_voice" type="unitree_asr_voice_node" name="unitree_asr_voice" output="screen">
+    <param name="network_interface" value="$(arg network_interface)"/>
+    <param name="dds_topic" value="$(arg dds_topic)"/>
+    <param name="asr_topic" value="$(arg asr_topic)"/>
+    <param name="queue_size" value="$(arg queue_size)"/>
+  </node>
+</launch>
