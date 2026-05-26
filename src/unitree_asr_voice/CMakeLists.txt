@@ -10,6 +10,8 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
 )
 
+find_package(nlohmann_json REQUIRED)
+
 catkin_package()
 
 # Bundled SDK (vendor/unitree_sdk2). No external unitree_sdk2 path required.
@@ -47,6 +49,7 @@ target_link_libraries(unitree_asr_voice_node
   ddscxx
   ddsc
   pthread
+  nlohmann_json::nlohmann_json
 )
 
 # devel: RPATH into package vendor; install: .so next to catkin lib/, node uses $ORIGIN/..
